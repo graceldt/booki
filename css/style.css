@@ -64,6 +64,7 @@ a {
 }
 
 /****** Header  ******/
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -74,7 +75,7 @@ a {
 
 .nav-logo {
     padding: 30px 50px 30px 0px;
-    width: 161.09px;
+    width: 80px;
 }
 
 .nav-logo img {
@@ -93,8 +94,6 @@ a {
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    
-
 }
 
 .nav-hebergement {
@@ -114,14 +113,17 @@ a {
     padding-top: 8px;
 }
 
+/****** Info bar  ******/
+
 .container-info-group {
-    width: 1,340px;
     height: 281px;
     gap: 35px;
+    margin-bottom: -90px;
+
 }
 
 .info-group-p {
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .container-form {
@@ -129,6 +131,8 @@ a {
     height: 3em;
     margin-top: 30px;
 }
+
+/****** Search bar  ******/
 
 .button-loc {
     width: 50px;
@@ -147,7 +151,6 @@ a {
     opacity: 0.8;
     
 }
-
 
 .button-search {
     width: 132px;
@@ -172,6 +175,8 @@ a {
     outline: none;
 }
 
+/****** Filter bar  ******/
+
 .container-filter {
     margin-right: 20px;
 }
@@ -180,9 +185,6 @@ a {
     display: flex;
     flex-direction: row; 
     height: 50px;
-    
-    margin-top: 30px;
-    ;
 }
 
 
@@ -204,13 +206,16 @@ a {
 .button-filter-h {
     margin-right: 10px;
     margin-left: 10px;
+    font-weight: bold;
+    font-size: large;
 }
 
 .infobar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 
 }
 
@@ -238,6 +243,7 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    height: 620px;
 }
 
 .Hebergements-cards {
@@ -259,7 +265,10 @@ a {
     border-top-right-radius: 20px;
 }
 
-
+.show-more {
+    margin-top:-20px;
+    font-size: smaller;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -307,45 +316,60 @@ a {
 }
 
 
+/************Activite************************/
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
 
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+.activity{
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+.activity section{
+    padding: 30px;
 }
+
+.activity-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+    padding-top: 30px;
+
+}
+
+.card-img-activity {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activity-cards img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity-cards .card-title { 
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+
+.footer {
+    padding: 0px 0px 10px 20px ;
+    display: flex;
+    justify-content: start;
+    background-color:#F2F2F2;
+    margin: 20px 0px -10px 0px;
+}
+
+.colonne-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 20px;
+    width: 100%;
+}
+
+
