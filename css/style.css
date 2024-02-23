@@ -69,8 +69,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 79px;
-
 }
 
 .nav-logo {
@@ -161,15 +159,22 @@ a {
     padding: 15px 16px 15px 16px;
     background-color: #0065FC;
     color: white;
+    margin-left: -5px;
 }
+
+.button-search-mobile {
+    display: none;
+}
+
 
 .input {
     width: 147px;
     height: 17px;
     border: 1px solid #F2F2F2;
-    border-left: none; /*ne fonctionne pas. mettre apres border*/
-    border-right: none; /*ne fonctionne pas. mettre apres border */
+    border-left: none; 
+    border-right: none; 
     padding: 15px 16px 15px 16px; 
+    margin-left: -5px;
 }
 .input:focus {
     outline: none;
@@ -202,6 +207,10 @@ a {
     background-color: #DEEBFF;
 }
 
+.button-filter {
+    display: flex;
+    flex-direction: row;
+}
 
 .button-filter-h {
     margin-right: 10px;
