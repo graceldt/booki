@@ -3,13 +3,27 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filter-bar {
+        flex-direction: column;
+        height: 100%;
+        align-items: baseline;
+    }
+
+    .button-filter-logo {
+        padding: 10px;
+    
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+        align-self: stretch;
     }
+
 
     .populaires {
         width: 100%;
@@ -34,13 +48,31 @@
         font-size: 13px;
     }
 
-    .card-img-activity {
-    height: 260px;
-    }
-    .activity-cards img {
-        width: 190px;
-        height: 190px;
-        border-radius: 20px 20px 0px 0px;
+
+    .card-activity {
+        width: 100%;
+        height: 100%;
     }
 
+    .activity-container a {
+        width: 21%;
+    }
+
+    .activity-container .card-content{
+        display: flex;
+        height: 30%;
+        align-items: center;
+    }
+    .activity-container img {
+        width: 100%;
+        height: 190px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+
+    .activity-container .card-title { 
+        margin: 0px 0px 20px 20px;  
+    }
+    
 }
